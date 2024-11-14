@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .hero-section {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .subscribe-input {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .navbar-custom {
+            background-color: #ff5722;
+        }
+
+        .navbar-custom .nav-link {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .text-box {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-style: italic;
+        }
+
+
+        .about-section {
+            background-color: #f9f9f9;
+        }
+
+        .about-section h2 {
+            font-weight: bold;
+        }
+
+        .about-section .lead {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            margin-top: 20px;
+        }
+
+        .pricing-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .pricing-header {
+            background-color: #f7630c;
+            color: #fff;
+            padding: 20px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .pricing-price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .btn-signup {
+            background-color: #f7630c;
+            color: #fff;
+        }
+
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        .contact-info {
+            line-height: 1.8;
+        }
+
+        .map-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .main_btn {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        .btn1 {
+            padding: px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>Company</h1>
+            <p>We specialize in blablabla</p>
+            <form class="subscribe-input d-flex">
+                <input type="email" class="form-control me-2" placeholder="Email Address">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h2>About Company Page</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary">Get in Touch</a>
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="icon">
+                        <svg width="80" height="80" viewBox="0 0 16 16" class="bi bi-bar-chart-fill" fill="#ff5722">
+                            <rect width="4" height="7" x="1" y="10"></rect>
+                            <rect width="4" height="11" x="6" y="6"></rect>
+                            <rect width="4" height="14" x="11" y="3"></rect>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-15">
+                <div class="text-box">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="services-section py-5">
+        <div class="container text-center">
+            <h2>Services</h2>
+            <p class="mb-5">What we offer</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-power text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5>Power</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-heart-fill text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5>Love</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-briefcase-fill text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5>Job Done</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="container my-2">
+                    <div class="row justify-content-center">
+                        <div class="col-md-15">
+                            <div class="text-box">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-power text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5>Power</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-heart-fill text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5>Love</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-briefcase-fill text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5>Job Done</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-award-fill text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5>Green</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-award-fill text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5>Certified</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-wrench-adjustable text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5>Hard Work</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center my-2">
+        <h2>PORTFOLIO</h2>
+        <p class="mb-4">What we have created</p>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://i0.wp.com/www.peppermintandco.ca/wp-content/uploads/2024/09/Why-Travel-To-Paris-thumb-2024-aug.jpg?resize=350%2C200&ssl=1"
+                            class="card-img-top" alt="Paris">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris</h5>
+                            <p class="card-text">Yes, we built Paris.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://media.architecturaldigest.com/photos/5e1cf02edd508700093c7c3d/16:9/w_5136,h_2889,c_limit/GettyImages-109437380.jpg"
+                            class="card-img-top" alt="New York">
+                        <div class="card-body">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">We built New York.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://itc.imgix.net/websiteimages/luxurytravel/shutterstock_531088531.jpg?fit=crop&auto=enhance&h=200&w=350"
+                            class="card-img-top" alt="San Francisco">
+                        <div class="card-body">
+                            <h5 class="card-title">San Francisco</h5>
+                            <p class="card-text">Yes, San Fran is ours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="bg-light text-center py-5">
+            <h3 class="mb-4">WHAT OUR CUSTOMERS SAY</h3>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote">
+                            <p>"This company is the best. I am so happy with the result!"</p>
+                            <footer class="blockquote-footer">Michael Roe, Vice President, Comment Box</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote">
+                            <p>"Absolutely wonderful experience. Highly recommend!"</p>
+                            <footer class="blockquote-footer">Sarah Johnson, CEO, Feedback Inc.</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote">
+                            <p>"Exceptional service and attention to detail."</p>
+                            <footer class="blockquote-footer">David Smith, Manager, ClientCorp</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="text-center my-5">
+        <h2>PRICING</h2>
+        <p class="mb-4">Choose a payment plan that works for you</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Basic</h3>
+                        </div>
+                        <ul class="list-unstyled p-3">
+                            <li><strong>20</strong> Lorum</li>
+                            <li><strong>15</strong> Ipsum</li>
+                            <li><strong>5</strong> Dolor</li>
+                            <li><strong>2</strong> Sit</li>
+                            <li>Endless Amet</li>
+                        </ul>
+                        <div class="pricing-price mb-3">$19 <small>per month</small></div>
+                        <button class="btn btn-signup">Sign Up</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Pro</h3>
+                        </div>
+                        <ul class="list-unstyled p-3">
+                            <li><strong>50</strong> Lorum</li>
+                            <li><strong>25</strong> Ipsum</li>
+                            <li><strong>10</strong> Dolor</li>
+                            <li><strong>5</strong> Sit</li>
+                            <li>Endless Amet</li>
+                        </ul>
+                        <div class="pricing-price mb-3">$29 <small>per month</small></div>
+                        <button class="btn btn-signup">Sign Up</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Premium</h3>
+                        </div>
+                        <ul class="list-unstyled p-3">
+                            <li><strong>100</strong> Lorum</li>
+                            <li><strong>50</strong> Ipsum</li>
+                            <li><strong>25</strong> Dolor</li>
+                            <li><strong>10</strong> Sit</li>
+                            <li>Endless Amet</li>
+                        </ul>
+                        <div class="pricing-price mb-3">$49 <small>per month</small></div>
+                        <button class="btn btn-signup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3>CONTACT</h3>
+                    <p>Contact us and we’ll get back to you within 24 hours.</p>
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt-fill"></i> Chicago, US</p>
+                        <p><i class="bi bi-telephone-fill"></i> +00 1515151515</p>
+                        <p><i class="bi bi-envelope-fill"></i> email@domain.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Comment" required></textarea>
+                        </div>
+                        <div class="main_btn">
+                            <button type="submit" class="btn btn-primary btn1">Send</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-0">
+            <img src="https://www.stoneacre.co.uk/blog/wp-content/uploads/2019/10/83830_0a0c886dd9e04f0595ffe695c2c4b599_1556791126.jpeg"
+                alt="Map" class="map-image">
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
